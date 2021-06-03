@@ -39,6 +39,11 @@ Delinquencer allows you to set each cell/step to one of the following four state
 The PatterMaker screen makes it easy for you to assign the state to the 64 steps and which cells/steps you are going to give the Delinquencer control over.
 So once the Delinquencer has some notes to play with, the fun starts. On the Delinquencer menu page you will see that the 64 grid of notes are displayed and 8 modulation indicators run along the bottom and on the right. The modulation indicators have one of two settings, either On (lit) or Off (un-lit). If the intersecting cell/step at an “On” modifier in a column and row modifiers are both On.
 
+###Navigation and finding your way around
+The Delinquencer application consists of four screens: Sequencer, Note Entry, PatterMaker and Delinquencer. You can access these by pressing the [K2] button on your Norns. The four screens loop around as you continue to press the [K2] button, see the Figure below:
+
+![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+
 ### Screen 1 - Sequencer
 #### Navigation Controls
 * Encoder 1 - Change BPM
