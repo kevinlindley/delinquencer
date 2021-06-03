@@ -1,4 +1,4 @@
-<img src="https://github.com/kevinlindley/delinquencer-support/blob/main/DelinquencerTitle.png" width="544">
+<center><img src="https://github.com/kevinlindley/delinquencer-support/blob/main/DelinquencerTitle.png" width="544"></center>
 
 # delinquencer
 A "sequencer" module for Norns but with a mind of its own.
