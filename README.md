@@ -1,3 +1,5 @@
+<img src="https://github.com/kevinlindley/delinquencer-support/blob/main/DelinquencerTitle.png>
+
 # delinquencer
 A "sequencer" module for Norns but with a mind of its own.
 
