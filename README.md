@@ -22,55 +22,55 @@ Key 1*- Reset if Held
 Key 2 - Next Menu
 Key 3 - Stop/Start
 #### Settings
-BPM       - Beats per Minute
-Division  - Divs per Beat
-Loop      - Looping Type
-Scale     - Quantised Scale
-Transpose - Transposition
-Preset    - Patches
+* BPM       - Beats per Minute
+* Division  - Divs per Beat
+* Loop      - Looping Type
+* Scale     - Quantised Scale
+* Transpose - Transposition
+* Preset    - Patches
 ### Screen 2 - Note Entry
 #### Navigation Controls
-Encoder 1 - Sequencer Cell Position Selection
-Encoder 2 - Menu Item Selection
-Encoder 3 - Menu Item Value
-Key 1 - System Menu
-Key 2 - Next Menu
-Key 3 - Toggle Current Cell
+* Encoder 1 - Sequencer Cell Position Selection
+* Encoder 2 - Menu Item Selection
+* Encoder 3 - Menu Item Value
+* Key 1 - System Menu
+* Key 2 - Next Menu
+* Key 3 - Toggle Current Cell
 #### Settings
-Note      :  Cell Note Pitch
-Velocity : Cell Note Velocity
-Length : Cell Note Length
-Cell State : On/Off/Rst/Skp
-Probability: 0-100%
-Len Notes  : Set all Note Lengths
+* Note      :  Cell Note Pitch
+* Velocity : Cell Note Velocity
+* Length : Cell Note Length
+* Cell State : On/Off/Rst/Skp
+* Probability: 0-100%
+* Len Notes  : Set all Note Lengths
 ### Screen 4 - PatternMaker
 #### Navigation Controls
-Encoder 1 - Change BPM
-Encoder 2 - Menu Item Selection
-Encoder 3 - Menu Item Value
-Key 1 - System Menu
-Key 2 - Next Menu
-Key 3 - Stop/Start
+* Encoder 1 - Change BPM
+* Encoder 2 - Menu Item Selection
+* Encoder 3 - Menu Item Value
+* Key 1 - System Menu
+* Key 2 - Next Menu
+* Key 3 - Stop/Start
 #### Settings
-Pattern  - Mod Pattern
-Neutron  - On/Off/Rst/Skp/Ctl
-Proton   - On/Off/Rst/Skp/Ctl
-Mutation - 0-100%
+* Pattern  - Mod Pattern
+* Neutron  - On/Off/Rst/Skp/Ctl
+* Proton   - On/Off/Rst/Skp/Ctl
+* Mutation - 0-100%
 ### Screen 4 - Delinquencer
 #### Settings
-Encoder 1 - Select Modifier
-Encoder 2 - Menu Item Selection
-Encoder 3 - Menu Item Value
-Key 1 - System Menu
-Key 2 - Next Menu
-Key 3 - Stop/Start
+* Encoder 1 - Select Modifier
+* Encoder 2 - Menu Item Selection
+* Encoder 3 - Menu Item Value
+* Key 1 - System Menu
+* Key 2 - Next Menu
+* Key 3 - Stop/Start
 #### Settings
-X-Pat  - Column Pattern
-X-Loop - Column Change Freq
-Y-Pat  - Row Pattern
-Y-Loop - Row Change Freq
-State  - Modifier Setting
-Preset - Presets to try
+* X-Pat  - Column Pattern
+* X-Loop - Column Change Freq
+* Y-Pat  - Row Pattern
+* Y-Loop - Row Change Freq
+* State  - Modifier Setting
+* Preset - Presets to try
 ## Notes on Use
 ?
 ## Installation
