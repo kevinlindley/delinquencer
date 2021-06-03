@@ -107,8 +107,6 @@ The Delinquencer application consists of four screens: Sequencer, Note Entry, Pa
 * Y-Loop - Row Change Freq
 * State  - Modifier Setting
 * Preset - Presets to try
-## Notes on Use
-?
 ## Installation
 1. From maiden:
 ```;install https://github.com/kevinlindley/delinquencer```
