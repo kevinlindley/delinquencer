@@ -1,7 +1,7 @@
 # delinquencer
 A "sequencer" module for Norns but with a mind of its own.
 
-![alt text](https://github.com/kevinlindley/delinquencer-support/blob/main/DelinqunecerRunningOnNorns450.png)
+<img src="https://https://github.com/kevinlindley/delinquencer-support/blob/main/DelinqunecerRunningOnNorns450.png" width="450" height="450">
 
 ## Requirements
 * Norns
