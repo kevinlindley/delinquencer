@@ -1,7 +1,7 @@
 # delinquencer
 A "sequencer" module for Norns but with a mind of its own.
 
-![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+![alt text](https://github.com/kevinlindley/delinquencer-support/blob/main/DelinqunecerRunningOnNornsSmall.png "delinquencer running on a Norns Shield")
 
 ## Requirements
 * Norns
