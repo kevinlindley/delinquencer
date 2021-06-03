@@ -1,3 +1,5 @@
+![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+
 # delinquencer
 A "sequencer" module for Norns but with a mind of its own.
 
@@ -25,7 +27,9 @@ After all it’s not like the world needs yet another sequencer?**
 
 ## Mini Manual
 Warning: This mini manual is just a list of navigation commands and parameter descriptuions, its providd as an *aide-mémoire* and is not a replacement for the full Delinquencer manual and its walkthroughs.
+
 ![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+
 ### Theory of operation
 Fundamentally the Delinquencer script turns your Norns into a 1 to 64 notes / cells / steps  sequencer that allows you to set the note pitch, length, velocity and probability. You can change the BPM, time divisions The Delinquencer play both sound through its own limited PolySaw engine and/or send MIDI instructions to a connected synth (its intended purpose).
 
