@@ -46,7 +46,7 @@ So once the Delinquencer has some notes to play with, the fun starts. On the Del
 ###Navigation and finding your way around
 The Delinquencer application consists of four screens: Sequencer, Note Entry, PatterMaker and Delinquencer. You can access these by pressing the [K2] button on your Norns. The four screens loop around as you continue to press the [K2] button, see the Figure below:
 
-![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+<img src="https://github.com/kevinlindley/delinquencer-support/blob/main/MenuNavigation.png">
 
 ### Screen 1 - Sequencer
 #### Navigation Controls
