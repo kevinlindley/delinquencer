@@ -19,21 +19,35 @@ After all it’s not like the world needs yet another sequencer?**
 
 > Entering notes into a 64 grid and playing them back is usually the end state for most sequencers but for the Delinquencer that’s the starting point. It’s the ability to mangle and alter over time the playback of these notes that makes the Delinquencer different to many other sequencers.
 
-**So is Delinquencer a MIDI sequencer? **
+**So is Delinquencer a MIDI sequencer?**
 
 > Well yes, but I also dabbled in SuperCollider and ended up producing a new sound engine. I only added it so I could just have a simple sound during development of the Delinquencer. Trouble is, that took on a life of its own. It’s still simplistic but then this was meant to be a sequencer project not a synth-engine project, but it’s fun to play with.
 
 ## Mini Manual
+Warning: This mini manual is just a list of navigation commands and parameter descriptuions, its providd as an *aide-mémoire* and is not a replacement for the full Delinquencer manual and its walkthroughs.
 ![alt text](https://github.com/kevinlindley/DemonCore/blob/55c5bdccfdd51665a203fefc01973fa4af2d7787/DemonCoreSmall.png "Demon Core running on a Norns Shield")
+### Theory of operation
+Fundamentally the Delinquencer script turns your Norns into a 1 to 64 notes / cells / steps  sequencer that allows you to set the note pitch, length, velocity and probability. You can change the BPM, time divisions The Delinquencer play both sound through its own limited PolySaw engine and/or send MIDI instructions to a connected synth (its intended purpose).
+
+Delinquencer also allows you to change the direction of sequence note play, forward, back, up, down etc., as well as some more interesting ways (spiral, snake, frog, blocks etc.). It also has some note presets to get the 64 grid filled in quickly (to get you exploring rather than laboriously entering notes manually). Delinquencer allows you to transpose the whole grid of 64 notes and quantise the notes to a specific music scale.
+If you do want to enter notes manually you can still set the individual pitch, length, probability for each of the 64 steps/cells.
+
+*So far nothing new I hear you say ….. but …..*
+
+Delinquencer allows you to set each cell/step to one of the following four states: On, Rest, Skip and Control. The On, Rest and Skip states are all standard, but where things get interesting is setting a notes state to “Control”. Now you have just handed over control of that cell/step to the Delinquencer. The Delinquencer now decides what happens based on the other settings you make.
+
+The PatterMaker screen makes it easy for you to assign the state to the 64 steps and which cells/steps you are going to give the Delinquencer control over.
+So once the Delinquencer has some notes to play with, the fun starts. On the Delinquencer menu page you will see that the 64 grid of notes are displayed and 8 modulation indicators run along the bottom and on the right. The modulation indicators have one of two settings, either On (lit) or Off (un-lit). If the intersecting cell/step at an “On” modifier in a column and row modifiers are both On.
+
 ### Screen 1 - Sequencer
 #### Navigation Controls
-Encoder 1 - Change BPM
-Encoder 2 - Menu Item Selection
-Encoder 3 - Menu Item Value
-Key 1 - System Menu
-Key 1*- Reset if Held
-Key 2 - Next Menu
-Key 3 - Stop/Start
+* Encoder 1 - Change BPM
+* Encoder 2 - Menu Item Selection
+* Encoder 3 - Menu Item Value
+* Key 1 - System Menu
+* Key 1*- Reset if Held
+* Key 2 - Next Menu
+* Key 3 - Stop/Start
 #### Settings
 * BPM       - Beats per Minute
 * Division  - Divs per Beat
