@@ -10,16 +10,16 @@ A "sequencer" module for Norns but with a mind of its own.
 ## Background
 The Delinquencer is my second ever script for the Norns and I wanted to create a sequencer that allowed a music producer to have fun exploring, mangling and generally being inspired by finding sweet spots in a 64 grid of notes. Essentially, the Delinquencer starts out as a simple 64 grid sequencer but then allows you to experiment quickly.
 
-**So it’s the Delinquencer feature complete?
+**So it’s the Delinquencer feature complete?**
 
 > Well probably not, I’m sure its missing a feature you think will be vital, but I’ve had to draw the line under the Delinquencer project otherwise it would never see the light of day outside of my Norns Shield.
 
 **So what makes the Delinquencer something you should try?
+After all it’s not like the world needs yet another sequencer?**
 
-> After all it’s not like the world needs yet another sequencer?
-Entering notes into a 64 grid and playing them back is usually the end state for most sequencers but for the Delinquencer that’s the starting point. It’s the ability to mangle and alter over time the playback of these notes that makes the Delinquencer different to many other sequencers.
+> Entering notes into a 64 grid and playing them back is usually the end state for most sequencers but for the Delinquencer that’s the starting point. It’s the ability to mangle and alter over time the playback of these notes that makes the Delinquencer different to many other sequencers.
 
-**So is Delinquencer a MIDI sequencer?
+**So is Delinquencer a MIDI sequencer? **
 
 > Well yes, but I also dabbled in SuperCollider and ended up producing a new sound engine. I only added it so I could just have a simple sound during development of the Delinquencer. Trouble is, that took on a life of its own. It’s still simplistic but then this was meant to be a sequencer project not a synth-engine project, but it’s fun to play with.
 
