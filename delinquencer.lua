@@ -78,9 +78,13 @@
 -- Preset - Presets to try
 --
 -- --------------------------------
--- Version : 2.0.0
+-- Version : 2.1.0
 -- Date    : 2021-06-03
 -- --------------------------------
+--
+-- Thanks to the following people
+-- for Bug Fix Reports :-)
+--   xmacex
 --
 -- Press {K3} to start ....
 
@@ -963,7 +967,7 @@ end
 function draw_slash_screen()
   screen.clear()
   screen.blend_mode(0)
-  screen.display_png("/home/we/dust/code/bitstream/assets/splash.png", 0, 0)
+  screen.display_png(DATA_DIR.."assets/splash.png", 0, 0)
 end
 
 
