@@ -111,3 +111,6 @@ The Delinquencer application consists of four screens: Sequencer, Note Entry, Pa
 1. From maiden:
 ```;install https://github.com/kevinlindley/delinquencer```
 2. Power Off and On to install the new Engine provided.
+
+## Bugs Fix - Release 2.1.0
+* Splashscreen bug cause by incorrect path fixed, thanks to Mace Ojala for reporting the bug and the fix :-).
