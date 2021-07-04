@@ -78,13 +78,13 @@
 -- Preset - Presets to try
 --
 -- --------------------------------
--- Version : 2.1.0
--- Date    : 2021-06-03
+-- Version : 2.2.0
+-- Date    : 2021-07-04
 -- --------------------------------
 --
 -- Thanks to the following people
 -- for Bug Fix Reports :-)
---   xmacex
+--   xmacex, spike, kcpaul
 --
 -- Press {K3} to start ....
 
@@ -122,9 +122,10 @@ local active_pattern_sequence = {}
 local active_mod_sequence     = {}
 local midi_notes_in_scale     = {}
 local editcell = 1
+local devices = {}
 
-local midi_out_device  = 1
-local midi_out_channel = 1
+--local midi_out_device  = 1
+--local midi_out_channel = 1
 local active_notes = {}
 local sequencestep = 1
 local hstep = 1
@@ -226,15 +227,35 @@ function mod_ypattern_change(x)
   update_row_modifier()
 end
 
-function new_midi_device(x)
+function new_midi_device()
+ -- print(x)
   all_notes_off()
-  midi.connect(x)
-  print("New MIDI Device ["..x.."]")
+  x = params:get("midi_out_device")
+   --midi_output = midi.connect(x)
+   midi_out_device = midi.connect(params:get("midi_out_device_id"))
+  print("MIDI Device now set to [" .. devices[x] .. "]")
 end
+
+function get_midi_port_name(x)
+  return midi.vports[x].name
+end
+
+
+function display_midi_devices()
+     for x,y in pairs(midi.vports) do
+       print (x .. ": " .. y.name)
+   end
+   print("-midi device details-")
+    for i,v in pairs(midi.devices) do
+      tab.print(midi.devices[i])
+      print("-")
+    end
+end
+
 
 function new_midi_channel(x)
   all_notes_off()
-  print ("New MIDI Channel ["..x.."]")
+  print ("MIDI Channel now set to ["..x.."]")
 end
 
 
@@ -283,7 +304,7 @@ function kill_all_notes_off()
   for nindex=0,127 do
     midi_out_device:note_off(nindex,nil,params:get("midi_out_channel"))
   end
-  print("Here")
+  print("Notes Killed")
 end
 
 function all_notes_off()
@@ -395,9 +416,11 @@ function setup_parameters()
     params:add_option("output", "Output", output_options, 3)
     params:set_action("output", function(x) new_output(x) end)
     params:add_separator("MIDI Settings") 
-    params:add_number("midi_out_device","Midi out device",1,4,2)
-    params:set_action("midi_out_device", function(x) new_midi_device(x) end)
-    params:add_number("midi_out_channel","Midi out channel",1,16,1)
+    params:add{type = "option", id = "midi_out_device_id", name = "Device", options = devices, action=new_midi_device}
+      
+  --  params:add_number("midi_out_device","Midi out device",1,4,1)
+  --  params:set_action("midi_out_device", function(x) new_midi_device(x) end)
+    params:add_number("midi_out_channel","Channel",1,16,1)
     params:set_action("midi_out_channel", function(x) new_midi_channel(x) end)
     params:add_separator("MIDI Panic") 
     params:add_trigger("midi_panic","All midi notes off")
@@ -491,6 +514,7 @@ end
 
 
 function init()
+  buildlistofdevices()
   midicounter = 0
   params:set("clock_source",1) -- Internal
   clock.set_source("internal")
@@ -508,7 +532,7 @@ function init()
   screen.aa(0)
   build_scales()
   setup_parameters()
-  midi_out_device = midi.connect(params:get("midi_out_device"))
+  midi_out_device = midi.connect(params:get("midi_out_device_id"))
   kill_all_notes_off()
   build_scale()
   build_cells()
@@ -518,7 +542,21 @@ function init()
   load_default_synth_sound()
   load_demo_patch()
   audio_sound_init()
+
   splashid = clock.run(display_splash_screen)
+
+end
+
+
+function buildlistofdevices()
+  devices = {}
+  -- Get a list of midi devices
+  count = 1
+  for id,device in pairs(midi.vports) do
+    strippedname = string.gsub(device.name, '^%s*(.-)%s*$', '%1')
+    devices[id] = strippedname .. " :" .. count
+    count = count +1
+  end
 end
 
 
@@ -891,6 +929,7 @@ function draw_cells()
       y = y + 1
     end
   end
+
 end  
 
 
@@ -1087,6 +1126,7 @@ function redraw()
     draw_cell(sequencestep,15,2)
     draw_cell(params:get("editcell"),15,4)
     draw_seq_values(sequencestep)
+    buildlistofdevices() -- Hack
   end
   screen.update()
 end  
