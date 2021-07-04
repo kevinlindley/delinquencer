@@ -114,3 +114,7 @@ The Delinquencer application consists of four screens: Sequencer, Note Entry, Pa
 
 ## Bugs Fix - Release 2.1.0
 * Splashscreen bug cause by incorrect path fixed, thanks to Mace Ojala for reporting the bug and the fix :-).
+
+## Bugs Fix - Release 2.2.0
+* Fixed bug, you can now use all of the MIDI devices and not just 2 to send sequences out to external MIDI devices.
+* Also changed the code so it shows which MIDI device the Delinquencer is connected to which is more useful than just the Device ID.
