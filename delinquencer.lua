@@ -10,6 +10,7 @@
 -- ---------------------------------
 --        Menu 1 - Sequencer
 ------------------------------------
+--
 -- Enc1 - Change BPM
 -- Enc2 - Menu Item Selection
 -- Enc3 - Menu Item Value
